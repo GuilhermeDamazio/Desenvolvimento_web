@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Lobster&display=swap');
+:root {
+    --h3-color: rgb(108, 14, 239);
+    --h3-size: 19.7px;
+    --h1-font-family: 'Lobster', 'cursive';
+    
+}
+
+div{display: inline-block;}
+#inicio{text-decoration: none;
+padding: 7px;}
+
+h3{
+    color: var(--h3-color);
+    font-size: var(--h3-size);
+}
+
+#inicio::before{text-decoration: none;}
+
+body{
+    background-image: linear-gradient(to top, #C37EDB,#B7A6F6, #FC8DCA);
+    background-attachment: fixed;
+}
+
+h1{font-family:var(--h1-font-family);}
+
+p.msgfofa{
+    font-family: 'Amatic SC', 'cursive';
+    font-size: 25px;
+}
+
+h3:hover{
+    color:red
+}
+
+div{
+    word-spacing: 3.5px;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #FC8DCA;
+    font-style: oblique;
+    text-align: center;
+    border-radius: 9px;
+    box-shadow: rgba(0, 0, 0, 0.438) 3px 3px 0px 0px;
+
+}
+
+img{margin-bottom: 20px;
+   
+
+    
+}
+
+p{
+    text-indent: initial;
+}
+
