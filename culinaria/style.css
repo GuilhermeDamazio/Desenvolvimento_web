@@ -19,7 +19,7 @@ h3{
 
 body{
     background-image: linear-gradient(to top, #C37EDB,#B7A6F6, #FC8DCA);
-    background-attachment: fixed;
+    background-attachment: fixed;*/
 }
 
 h1{font-family:var(--h1-font-family);}
@@ -44,6 +44,7 @@ footer{
     text-align: center;
     border-radius: 9px;
     box-shadow: rgba(0, 0, 0, 0.438) 3px 3px 0px 0px;
+    width: 100vh;
 
 }
 
@@ -57,3 +58,33 @@ p{
     text-indent: initial;
 }
 
+#content{
+    background-color: #FC8DCA;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 9px;
+    text-align: justify;
+    height: max-content;
+    width: max-content;
+    justify-content: center ;
+    place-items: center;
+    overflow-y: visible;
+    
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    background-color: blanchedalmond;
+    transition-delay: 0.5;
+    border-radius: 2px;
+    box-shadow: 3px 3px 10px rgba(32, 14, 14, 0.333);
+}
+
+.item{
+    margin: 2px;
+    padding: 3px;
+}
