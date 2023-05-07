@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Anton&family=Lobster&display=swap');
 :root {
     --h3-color: rgb(108, 14, 239);
@@ -6,20 +9,29 @@
     
 }
 
-div{display: inline-block;}
+
+
+div{display: flow-root;
+    word-spacing: 3.5px;
+    text-decoration: none;
+}
+
 #inicio{text-decoration: none;
 padding: 7px;}
 
 h3{
     color: var(--h3-color);
     font-size: var(--h3-size);
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
-#inicio::before{text-decoration: none;}
+
 
 body{
     background-image: linear-gradient(to top, #C37EDB,#B7A6F6, #FC8DCA);
-    background-attachment: fixed;*/
+    background-attachment: fixed;
+    text-align: center;
 }
 
 h1{font-family:var(--h1-font-family);}
@@ -27,16 +39,14 @@ h1{font-family:var(--h1-font-family);}
 p.msgfofa{
     font-family: 'Amatic SC', 'cursive';
     font-size: 25px;
+    text-align: center;
 }
 
 h3:hover{
     color:red
 }
 
-div{
-    word-spacing: 3.5px;
-    text-decoration: none;
-}
+
 
 footer{
     background-color: #FC8DCA;
@@ -44,47 +54,188 @@ footer{
     text-align: center;
     border-radius: 9px;
     box-shadow: rgba(0, 0, 0, 0.438) 3px 3px 0px 0px;
-    width: 100vh;
-
-}
-
-img{margin-bottom: 20px;
-   
-
     
+    
+    
+
 }
+
 
 p{
     text-indent: initial;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
-#content{
+
+.container-fluid{
     background-color: #FC8DCA;
-    padding: 10px;
-    margin: 5px;
+    
     border-radius: 9px;
     text-align: justify;
     height: max-content;
     width: max-content;
-    justify-content: center ;
-    place-items: center;
-    overflow-y: visible;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.438) 3px 3px 0px 0px;
+   
+    
     
 }
 
-a{
-    text-decoration: none;
-    
-}
 
 a:hover{
     background-color: blanchedalmond;
     transition-delay: 0.5;
     border-radius: 2px;
     box-shadow: 3px 3px 10px rgba(32, 14, 14, 0.333);
+    text-decoration: none;
+    
 }
 
-.item{
-    margin: 2px;
-    padding: 3px;
+.breadcrumb{
+    background-color: #AAECFC;
+    margin: 3px;
+    display: inline-block;
+    
+    
+    
 }
+
+.card{
+    background-color: #C37EDB;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    
+}
+
+
+.list-group-item{
+    background-color:#AAECFC;
+}
+
+main{
+    text-align: center;
+}
+
+
+
+/*<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romantic Bistro</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Romantic-ico.ico" type="image/x-icon">
+</head>
+<body>
+    
+        <header>
+            <h1 id="Home">Bem-Vindo(a)</h1>
+            Digite seu nome: <input type="text" name="nome">
+            <input type="button" value="ok" onclick="msg()">
+        
+        <p class="msgfofa">Que bom te encontrar por aqui! &#x1F496; </p>
+        </header>
+        <nav>
+        
+           <div >
+               <a href="Reservas.html" target="_self" rel="next">Reservas</a>
+               <a href="Horarios.html">Horário de Atendimento</a>
+                     <a href="SobreNos.html">Sobre nós </a>
+           </div>  
+
+           
+               </nav>
+                  <div id="content">
+                      
+                       <main>
+                                     <section>
+                                     <H2>Cardápio</H2>
+                      </section>
+                      <Section class="Cardápio">
+                                     <article><h3>Massas</h3>
+                                          <article><strong>Nhoque ao ragu de costela</strong>
+                       <br>
+                       <img class="item" src="https://www.vaisefood.com/wp-content/uploads/2012/10/eclatnhoque.jpg" width="250px" height="250px" alt="Imagem de um nhoque ao ragu de costela">
+                       <br>
+                      <em >Nhoque feito de mandioquinha e servido ao ragu de costela</em>
+                      <br>
+                                          </article>
+                                          <article><p><strong>Macarronada da Mama</strong></p>
+                       <br>
+                       <img class="item" src="https://www.sabornamesa.com.br/media/k2/items/cache/b5b56b2ae93d3dc958cf0c21c9383b18_XL.jpg" width="350px" height="250px" alt="Imagem de uma macarronada italiana">
+                       <br>
+                       <em>Macarronada feita especialmente com os melhores molhos.</em>
+                       <br>
+                                          </article>
+                                          <article><p><strong>Linguini Gamberetti</strong></p>
+                       <br>
+                       <img class="item" src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/6F0ECA0E-A9C2-4C42-9F58-14011294F7CB/Derivates/876e59d9-e113-4b2c-ba5f-9ec420fe3b0e.jpg" width="250px" height="250px" alt="Imagem de um prato Linguini Gamberetti">
+                       <br>
+                       <em>Camarão salteado na abobrinha, dedo de moça, azeite, alho, tomate cereja e manjericão com acompanhamento de pangratatto</em>
+                                          </article>
+                                     </article>
+                                     <article><h3>Risotos</h3>
+                                          <article> <strong>Risoto Gamberetti</strong>
+                                          <br>
+                                          <img src="https://www.donnamoderna.com/content/uploads/2021/11/Risotto-ai-gamberetti.jpg" width="250px" height="250px" alt="Risotto gamberetti">
+                                          <br>
+                                       <em>Camarão salteado com abobrinha, tomate cereja, alho, manjericão e pangrattato.</em>
+                                           </article>
+                                           <article><p><strong>Risoto Mix de cogumelos</strong></p>
+                       <img class="item" src="https://s2.glbimg.com/APk8pOrM29fQle4OjOHifg9mUHg=/0x0:1080x608/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_e84042ef78cb4708aeebdf1c68c6cbd6/internal_photos/bs/2022/2/7/7NkGZzQpWTB3ryM8kEFQ/capa-materia-gshow-2022-01-29t135328.257.png" width="350px" height="250px" alt="Risoto com mix de cogumelos">
+                                          <br>
+                                       <em>Risoto com mix de cogumelos, azeite trufado e crispy de parmesão.</em></article>
+                                      </article>
+                                     <article><h3>Lanches</h3>
+                                          <article><strong>X-Salada</strong>
+                                          <br>
+                                          <img class="item" src="https://assets.unileversolutions.com/recipes-v2/106684.jpg" width="250px" height="250px" alt="Imagem de um x-salada ">
+                                          <br>
+                                          <em>Carne, alface, tomate e maionese.</em> </article>
+                                          <article><p><strong>X-Bacon</strong></p>
+                                          <img class="item" src="https://www.sabornamesa.com.br/media/k2/items/cache/5098e75e57e36807c173cb7490b1b0d2_XL.jpg"width="350px" height="250px" alt="imagem de um x-bacon">
+                                          <br>
+                                          <em>Carne, bacon, maionese e alface.</em> </article>
+                                          <article><p><strong>X-Tudo</strong></p>
+                                          <br>
+                                          <img class="item" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/ed/c8/10/x-tudo.jpg" width="250px" height="250px" alt="Imagem de um X-Tudo">
+                                          <br>
+                                          <em>Carne, bacon, ovo, queijo, tomate, cebola roxa e alface.</em>
+                                          </article>
+                                      </article>
+                      <article><h3>Drinks</h3>
+                                      <article><p><strong>Negroni</strong</p>
+                                      <br>
+                                      <img class="item" src="https://conteudo.imguol.com.br/c/entretenimento/73/2020/09/10/negroni-1599771396384_v2_3x4.jpg"  width="250px" height="250px" alt="Imagem de um drink Negroni">
+                                      <br>
+                                      <em>Beefeater, carpano classic, campari e angostura bitter's classic.</em></article>
+                                      <article><p><strong>Margarita</strong></p>
+                                      <br>
+                                      <img class="item" src="https://www.xl1.com.br/wp-content/uploads/2022/01/Margarita.jpg" width="250px" height="250px"  alt="imagem de um drink de Margarita">
+                                      <br>
+                                      <em>José cuervo, cointreau, limão, agave.e borda de sal</em></article>
+                                      <article><p><strong>Blood Mary</strong></p>
+                                      <br>
+                                      <img class="item" src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/bloody-mary-a2983ba.jpg" width="250px" height="250px" alt="Imagem de um drink Blood Mary">
+                                      <br>
+                                      <em>Absolut, suco de tomate, tabasco, pimenta do reino, molho ingles, limão e cenoura.</em></article>
+                      </article>
+                                     </Section>
+                                 
+                      
+                      
+                      </main>
+                  </div>
+
+<footer><p>Desenvolvido por <strong>Torres</strong>  <a id="inicio" href="Restaurante.html">&uparrow;</a>
+</p> Problemas com o site? <a href="#">Contate-nos</a>
+
+</footer>
+
+</body>
+</html>*/
